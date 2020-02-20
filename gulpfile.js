@@ -46,9 +46,12 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
+		'app/libs/jquery.mask.min.js',
+		'app/libs/jquery.validate.js',
 		'app/libs/swiper/swiper.min.js', 			//----слайдер
 		'app/libs/fancybox/jquery.fancybox.js', 		//----картінка прикліку
-		'app/libs/src/fullpage.js', 		//----картінка прикліку
+		'app/libs/jquery.popupoverlay.js',
+
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

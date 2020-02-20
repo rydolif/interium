@@ -6,24 +6,31 @@
 		left: 25px
 		transition: all .3s
 		animation: error .3s linear 1 forwards
-		color: red
+		color: #fff
 		text-align: center
 		font-weight: 600
-		background-color: $accent
+		background-color: red
 		border-radius: 10px
+		font-size: 12px
+
 		&::before
 			content: ''
 			position: absolute
 			left: 50%
 			top: -8px
 			margin-left: -2px
-			border-bottom: 4px solid $accent
+			border-bottom: 4px solid red
 			border-left: 4px solid transparent
 			border-right: 4px solid transparent
 			border-top: 4px solid transparent
 
 	div
 		position: relative
-		margin-bottom: 20px
-		&:last-child
-			margin-bottom: 0
+
+	label
+		font-size: 12px
+		margin-bottom: 3px
+		color: #fff
+
+		span
+			color: red

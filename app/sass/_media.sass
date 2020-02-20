@@ -3,18 +3,528 @@
   .container
     max-width: 1200px
 
+  body
+    font-size: 16px
+
+  h1
+    font-size: 42px
+
+  h2
+    font-size: 30px
+    line-height: 1.4 !important
+
+  input
+    height: 50px
+    line-height: 50px
+
+    &::placeholder
+      line-height: 50px
+
+
+  .header
+    padding: 5px 15px 0 15px
+
+    &__logo
+      font-size: 14px
+      line-height: 1.6
+      margin-right: 10px
+
+
+      img
+        width: 130px
+
+  .hero
+    padding:
+      top: 170px
+      bottom: 220px
+
+    p
+      margin-bottom: 30px
+
+    &__down
+      bottom: 15px
+
+  .about
+    padding:
+      top: 60px
+      bottom: 60px
+
+    &__sub-title
+      margin-bottom: 50px
+
+    &__statistic
+      &_wrap
+        padding: 30px
+        margin-bottom: 30px
+
+      &_content
+        margin-bottom: 40px
+
+    &__list_item
+      margin-bottom: 50px
+
+    &__order
+      h2
+        margin-bottom: 15px
+
+  .certificate
+    padding-bottom: 60px
+
+    &__container
+      padding-bottom: 60px
+
+    &__header
+      margin-bottom: 40px
+
+    &__slider
+      img
+        max-width: 240px
+
+  .work
+    padding-bottom: 70px
+    line-height: 1.6
+
+    br
+      display: none
+
+    &__header
+      margin-bottom: 20px
+
+    &__step
+      img
+        margin-bottom: 10px
+
+      p
+        margin-bottom: 15px
+
+      &_number
+        font-size: 22px
+
+  .product
+    padding-bottom: 40px
+
+    &__header
+      margin-bottom: 30px
+
+    &__tabs
+      margin-bottom: 40px
+
+      a
+        font-size: 14px
+
+    &__wrap_item
+      padding: 30px 20px
+  
+  .info
+    &__wrap
+      padding: 40px
+
+      p
+        margin-bottom: 30px
+
+      a
+        font-size: 26px
+
+    &__iframe
+      iframe
+        height: 700px
+
+  .contacts
+    padding:
+      top: 40px
+      bottom: 70px
+
+    &__form
+
+      &_btn
+        margin-top: 50px
+
+      &_line
+        margin-bottom: 15px
+
+  .footer__container
+    padding: 15px
+
+
 @media only screen and (max-width : 1200px)
   .container
     max-width: 992px
+
+  body
+    font-size: 14px
+
+  h1
+    font-size: 38px
+
+  h2
+    font-size: 26px
+
+  input
+    font-size: 14px
+    height: 45px
+    line-height: 45px
+
+    &::placeholder
+      font-size: 14px
+      line-height: 45px
+
+  .header__nav li
+    margin-right: 20px
+
+  .hero
+    padding: 130px 0
+
+    &__down
+      bottom: 5px
+
+
+  .about
+    padding: 40px 0
+
+    &__list_item p
+      margin-left: 25px
+
+    &__statistic
+      width: 68%
+
+  .product
+    &__tabs
+      margin-bottom: 25px
+
+    &__wrap
+      &_item
+        padding: 15px
+
+      &_img
+        width: 250px
+        height: 200px
+        margin-right: 15px
+
+  .info
+    &__wrap
+      padding: 25px
+
+      a
+        font-size: 22px
+
+    &__iframe
+      iframe
+        height: 650px
+
+  .about__sub-title
+    margin-bottom: 40px
+
 
 @media only screen and (max-width : 992px)
   .container
     max-width: 767px
 
+  .header
+    &__logo
+      font-size: 12px
+
+      img
+        width: 100px
+
+      p
+        display: none
+
+    &__info
+      flex-direction: column
+      margin-right: 15px
+
+      a
+        margin-right: 0
+
+    &__nav
+      margin-right: 15px
+
+      li
+        margin-right: 10px
+
+  .about
+    &__list_item
+      margin-bottom: 25px
+
+      p
+        margin-left: 15px
+
+      img
+        width: 25px
+
+    &__statistic
+      &_wrap
+        padding: 15px
+        margin-bottom: 15px
+
+      &_list
+        b
+          font-size: 28px
+
+      &_content
+        margin-bottom: 15px
+
+    &__order
+      &_wrap
+        margin-right: 0
+
+  .work__header
+    max-width: 80%
+
+  .contacts
+    padding-bottom: 40px
+
+    &__form
+      &_header
+        flex-direction: column
+
+        br
+          display: none
+
+      &_btn
+        margin-top: 30px
+
+  .info
+    &__iframe
+      iframe
+        height: 590px
+
+  .footer
+    padding: 0 15px
+
+    &__container
+      padding: 15px 0
+
+
 @media only screen and (max-width : 767px)
   .container
     max-width: 576px
 
+  h1
+    margin-bottom: 20px
+
+    br
+      display: none
+
+  .header
+    &__nav
+      flex-direction: column
+
+    &__info
+      flex-direction: column
+
+      a
+        display: block
+        margin-bottom: 10px
+
+        &:last-child
+          margin-bottom: 0
+
+  .hero
+    padding: 100px 0
+
+    p
+      width: 70%
+
+  .about
+    &__statistic
+      &_wrap
+        flex-wrap: wrap
+
+      &_list
+        width: 48%
+        text-align: center
+        margin-bottom: 15px
+
+        p
+          line-height: 1.6
+
+    &__order
+      &_wrap
+        width: 100%
+
+        br
+          display: none
+
+  .certificate
+    padding-bottom: 40px
+
+  .work
+    padding-bottom: 40px
+  
+  .product__tabs
+    flex-wrap: wrap
+
+    li
+      width: 49%
+      margin-bottom: 5px
+
+  .contacts
+    &__form
+      width: 100%
+      max-width: 100%
+      max-width: 320px
+      margin: 0 auto
+  
+  .info
+    &__iframe
+      position: relative
+      right: 0
+      left: 0
+      width: 100%
+
+      iframe
+        height: 300px
+
+    &__wrap
+      width: 100%
+
+  .contacts
+    padding:
+      bottom: 30px
+      top: 30px
+  
+  .footer
+    &__container
+      flex-wrap: wrap
+      justify-content: space-around
+
+    p
+      max-width: 50%
+      width: 50%
+      margin-bottom: 10px
+      text-align: center
+
+
 @media only screen and (max-width : 576px)
   .container
     max-width: 100%
+
+  h1
+    font-size: 32px
+
+  h2
+    font-size: 24px
+
+  body
+    font-size: 12px
+
+  .btn
+    font-size: 14px
+    height: 40px
+  
+  .certificate__slider img
+    width: 100%
+
+  .product__wrap_img
+    width: 170px
+    height: 140px
+
+  .work
+    &__step p
+      line-height: 1.5
+
+    &__header
+      max-width: 50%
+
+
+@media only screen and (max-width : 480px)
+
+  h1
+    font-size: 28px
+
+  .header
+    &__info
+      display: none
+
+    &__logo img
+      width: 70px
+
+  .about
+    &__list,
+    &__statistic
+      width: 100%
+
+    &__sub-title
+      margin-bottom: 15px
+
+    &__list
+      &_item
+        margin-bottom: 15px
+
+        &:last-child
+          margin-bottom: 15px
+
+  .work
+    padding-bottom: 30px
+
+    &__header
+      width: 100%
+      max-width: 100%
+
+    &__step
+      &_item
+        width: 100%
+        flex-direction: column-reverse
+
+        img
+          display: none
+
+      &_number
+        font-size: 20px
+        line-height: 1.4
+  
+  .product
+    &__header
+      width: 100%
+      margin-bottom: 15px
+
+    &__tabs
+      margin-bottom: 15px
+
+      li
+       width: 100%
+
+       &:last-child
+         margin-bottom: 0
+
+    &__wrap
+
+      &_item
+        flex-wrap: wrap
+        padding: 10px
+
+      &_content
+        width: 100%
+
+      &_img
+        width: 100%
+        margin-right: 0
+        margin-bottom: 10px
+
+  .info__wrap
+    padding: 15px
+
+    a
+      font-size: 18px
+
+  .footer
+    &__container
+      p
+        width: 100%
+        max-width: 100%
+
+      a
+        display: inline-block
+  
+  .modal
+    position: relative
+    max-width: 360px
+    padding: 20px
+
+    &__close
+      top: 5px
+      right: 5px
+
+
+

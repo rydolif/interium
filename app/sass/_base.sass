@@ -7,7 +7,7 @@ $fonts--title: 'Gilroy', sans-serif
 
 //----------------------color---------------------
 $accent: #008aed
-$text: #fff
+$text: #212121
 //---------------------end-color---------------------
 
 body
@@ -15,10 +15,9 @@ body
 	position: relative
 	min-width: 320px
 	font-family: $fonts
-	font-size: 1vw
+	font-size: 18px
 	color: $text
 	line-height: 1.4
-	font-weight: 400
 
 ::selection
 	background-color: $accent
@@ -29,8 +28,8 @@ a, div, ul, li, input, textarea
 	&:focus
 		outline: none
 
-section
-	overflow: hidden
+// section
+// 	overflow: hidden
 	
 h1, h2, h3, h4, h5, h6
 	font-weight: 700
@@ -40,6 +39,12 @@ h1, h2, h3, h4, h5, h6
 
 h1
 	font-size: 48px
+	margin-bottom: 35px
+	color: #fff
+	font-family: $fonts--title
+
+h2
+	font-size: 36px
 
 ul
 	margin: 0
@@ -65,15 +70,16 @@ input
 
 input, textarea
 	border: none
-	border-bottom: 1px solid $text
+	border-bottom: 1px solid #fff
 	outline: none
 	box-shadow: none
 	-webkit-appearance: none
 	background-color: transparent
-	color: $accent
 	width: 100%
 	font-size: 18px
-	
+	color: #fff
+	transition: all .6s
+
 	&:focus:required:invalid
 		border-color: $accent
 		outline: none
@@ -87,12 +93,20 @@ input, textarea
 		-webkit-appearance: none
 
 	&::placeholder
-		color: #dbdbdb
-		font-size: 18px
+		color: #fff
 		line-height: 60px
 		font-weight: 400
-		text-transform: uppercase
 		letter-spacing: 2px
+
+textarea
+	resize: none
+	height: 100px
+	padding-top: 10px
+	line-height: 1.4
+
+	&::placeholder
+		line-height: 1.4
+
 
 sub, sup
 	font-size: 60%
@@ -135,5 +149,5 @@ input[type=number]::-webkit-outer-spin-button
 // @import "_base/animation"
 @import "_base/btn"
 @import "_base/form"
-// @import "_base/modal"
+@import "_base/modal"
 // @import "_base/hamburger"

@@ -11,22 +11,22 @@
 	<meta name="theme-color" content="#000">
 
 	<link rel="stylesheet" href="css/styles.min.css?v=1">
+	<meta name="yandex-verification" content="61d9fceacb05ba0f" />
 
-</head>
 
 <body>
 
 	<header class="header">
 		<div class="header__container">
-			<div class="header__logo">
+			<a href="#" class="header__logo">
 				<img src="img/logo.png" alt="logo">
 				<p>Лицензированый <br> партнер Powercom</p>
-			</div>
+			</a>
 
 			<ul class="header__nav">
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li class="click"><a href="#about">О нас</a></li>
+				<li class="click"><a href="#product">Каталог</a></li>
+				<li class="click"><a href="#contacts">Контакты</a></li>
 			</ul>
 
 			<div class="header__info">
@@ -34,123 +34,671 @@
 				<a href="mailto:ek1010@mail.ru" class="header__info_call">ek1010@mail.ru</a>
 			</div>
 
-			<a href="#" class="header__call">Обратный звонок</a>
+			<a href="#" class="header__call order_open">Обратный звонок</a>
 
 		</div>
 	</header>
 
 	<main>
+
 		<section class="hero">
 			<div class="hero__container container">
-				<h1>Источники бесперебойного питания<br>Powercom от 1,5 кВт дл 900 к Вт</h1>
+				<h1>Источники бесперебойного питания <br>Powercom от 1,5 кВт до 900 кВт</h1>
 				<p>Компания Альфа Итериум являеться лицензированым партнером Powercom, осуществляет подбор, поставку и последкющее обслуживание ИБП</p>
-				<a href="#" class="btn">Рассчитать необходимый ИБП</a>
+				<a href="#" class="btn calculate_open">Рассчитать необходимый ИБП</a>
+				<div class="click">
+					<a href="#about" class="hero__down"><img src="img/down.png" alt=""></a>
+				</div>
 			</div>
 		</section>	
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="about__container container">
-				<div class="list">
+				<div class="about__list">
 
-					<span class="title">Работайте только с проверенными компаниями!</span>
+					<span class="about__sub-title">Работайте только с проверенными компаниями!</span>
 
-					<div class="list__wrap">
-						<img src="img/Vector Smart Object12.png" alt="">
+					<div class="about__list_item">
+						<img src="img/about__icon1.png" alt="">
 						<p>Поставка от ведущего производителя Powercom</p>
 					</div>
 
-					<div class="list__wrap">
-						<img src="img/Vector Smart Object12.png" alt="">
-						<p>Поставка от ведущего производителя Powercom</p>
+					<div class="about__list_item">
+						<img src="img/about__icon2.png" alt="">
+						<p>Расширенная гарантия tна оборудование 5 лет</p>
 					</div>
 
-					<div class="list__wrap">
-						<img src="img/Vector Smart Object12.png" alt="">
-						<p>Поставка от ведущего производителя Powercom</p>
+					<div class="about__list_item">
+						<img src="img/about__icon3.png" alt="">
+						<p>Доставка до ваших дверей нашим транспортом</p>
 					</div>
 
-					<div class="list__wrap">
-						<img src="img/Vector Smart Object12.png" alt="">
-						<p>Поставка от ведущего производителя Powercom</p>
+					<div class="about__list_item">
+						<img src="img/about__icon4.png" alt="">
+						<p>Дополним ИПБ системой мониторинга сети</p>
 					</div>
-
-
 					
 				</div>
 
-				<div class="statistic">
-					<div class="statistic__wrap">	
-						<div class="list">
-							<span>560+</span>
-							<p>Реализованные<br> проекты</p>
+				<div class="about__statistic">
+					<div class="about__statistic_wrap">	
+						<div class="about__statistic_list">
+							<b>560+</b>
+							<p>Реализованные <br>проекты</p>
 						</div>
-
-						<div class="list">
-							<span>560+</span>
-							<p>Реализованные<br> проекты</p>
+						<div class="about__statistic_list">
+							<b>1250+</b>
+							<p>Выиграно <br>тендеров</p>
 						</div>
-
-						<div class="list">
-							<span>560+</span>
-							<p>Реализованные<br> проекты</p>
+						<div class="about__statistic_list">
+							<b>2000+</b>
+							<p>Клиентов <br>по России</p>
 						</div>
-
-						<div class="list">
-							<span>560+</span>
-							<p>Реализованные<br> проекты</p>
+						<div class="about__statistic_list">
+							<b>150+</b>
+							<p>Сервисных <br>центра</p>
 						</div>
-
-						
-
-					
-				</div>
-				<p>Наша компания разрабатывает, производит и обслуживает широкий спектр ИБП мощностью до 1500 кВА различных формфакторов, аккумуляторы и другое сопутствующее оборудование, а также программноаппаратные средства для мониторинга, контроля и управления системой электропитания. Сотрудничая с нами, вы получаете надежного партнера, обладающего всеми необходимыми компетенциями для решения задач по обеспечению бесперебойного электроснабжения вашего бизнеса</p>
-				
+					</div>
+					<div class="about__statistic_content">
+						<p>Наша компания разрабатывает, производит и обслуживает широкий спектр ИБП мощностью до 1500 кВА различных формфакторов, аккумуляторы и другое сопутствующее оборудование, а также программноаппаратные средства для мониторинга, контроля и управления системой электропитания. 
+						<br>Сотрудничая с нами, вы получаете надежного партнера, обладающего всеми необходимыми компетенциями для решения задач по обеспечению бесперебойного электроснабжения вашего бизнеса</p>
+					</div>
+					<div class="about__order">
+						<div><p>Вы останетесь в выигрыше!</p></div>
+						<div class="about__order_wrap">
+							<h2>Пришлем вам <br>предложение в течени <br>3 часов!</h2>
+							<a href="#" class="btn order_open">Отправить заявку</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			
 		</section>
 
-	
+		<section class="certificate">
+			<div class="certificate__container container">
 
+				<div class="certificate__header">
+					<p>Дилерские сертификаты и официальные письма о партнерстве</p>
+					<div>
+						<div class="certificate__prev"></div>
+						<div class="certificate__next"></div>
+					</div>
+				</div>
+				<div class="certificate__slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="img/certificate.jpg" data-fancybox="gallery">
+								<img src="img/certificate.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/certificate1.jpg" data-fancybox="gallery">
+								<img src="img/certificate1.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/certificate2.jpg" data-fancybox="gallery">
+								<img src="img/certificate2.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/certificate3.jpg" data-fancybox="gallery">
+								<img src="img/certificate3.jpg" alt="">
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="img/certificate4.jpg" data-fancybox="gallery">
+								<img src="img/certificate4.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="certificate__pagination swiper-pagination"></div>
+
+			</div>
+		</section>
+
+		<section class="work">
+			<div class="container">
+
+				<div class="work__header">
+					<p>Алгоритм дейвствий</p>
+					<h2>Как мы работаем?</h2>
+				</div>
+
+				<div class="work__step">
+
+					<div class="work__step_item">
+						<img src="img/work1.jpg" alt="">
+						<p>Заполняете <a href="img/pdf.pdf" target="_blank">опросный лист</a> с данными на ИБП и контактами для связи</p>
+						<div class="work__step_number">01</div>
+					</div>
+					<div class="work__step_item">
+						<img src="img/work2.jpg" alt="">
+						<p>Обрабатываем ваш запрос и отправляем <br>Вам предложение на ИБП Powercom в течении 3 часов. <br>С расширенной гарантией до 5 лет!</p>
+						<div class="work__step_number">02</div>
+					</div>
+					<div class="work__step_item">
+						<div>
+							<img src="img/work3.jpg" alt="">
+							<p>Согласовываем дату поставки. Отгружаем ваше оборудование и довозим нашим транспортом до вас.</p>
+						</div>
+						<div class="work__step_number">03</div>
+					</div>
+					<div class="work__step_item">
+						<img src="img/work4.jpg" alt="">
+						<p>Проводим монтаж и последующее <br>Сервисное обслуживание ИБП.</p>
+						<div class="work__step_number">04</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="product tabs" id="product">
+			<div class="container">
+
+				<div class="product__header">
+					<p>Предлагаем только лучшее!</p>
+					<h2>Наша продукция</h2>
+				</div>
+				
+				<ul class="product__tabs">
+					<li>
+						<a href="#one">ИБП для промышленных предприятий</a>
+					</li>
+					<li>
+						<a href="#two">ИБП для серверов и сетей</a>
+					</li>
+					<li>
+						<a href="#three">ИБП для компьютера и офисной техники</a>
+					</li>
+					<li>
+						<a href="#four">Специализированные решения</a>
+					</li>
+					<li>
+						<a href="#five">Аккумуляторы для ИБП</a>
+					</li>
+				</ul>
+
+				<div id="one" class="product__wrap tabs__wrap">
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product2.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>VRT и VGS</b> - новое поколение онлайн ИБП с коэффициентом мощности 0,9; функцией сегментации нагрузок, раздельно управляемыми выходными сегментами и возможностью подключения внешних батарейных блоков.</p>
+							<p>VRT универсален, выполнен в форм-факторе Rack/Tower, в стойке занимает 2U. VGS – напольная модель онлайн ИБП с евророзетками.</p>
+							<p>VGD и VGD RM – модели с коэффициентом мощности 0,7 и всеми вышеперечисленными достоинствами. Представлены в узком диапазоне мощностей, имеют более низкую стоимость.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>MRT-6000 -MRT-10K</li>
+								<li>VGS-6000/VGS-10K</li>
+								<li>VRT-6000/VRT-10K</li>
+								<li>VGD-8K31/VGD-10K31/VGD-12K31/VGD-15K31/VGD-20K31</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product1.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>VANGUARD-II-33 10-500KVA</b></p>
+							<p>Инверторные ИБП серии VGD-II-33 представляют собой современную систему бесперебойного питания с двойным преобразованием энергии. Полное управление на основе высокопроизводительного цифрового сигнального процессора - позволяет обеспечить высокую стабильность электропитания и надежность работы системы.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>VGD-II-10K33RM/VGD-II-25K33RM</li>
+								<li>VGD II 10K33 / VGD II 15K33 / VGD II 20K33 / VGD II 30K33 / VGD II 40K33</li>
+								<li>VGD II 60K33 / VGD II 80K33 / VGD II 90K33 / VGD II 100K33 / VGD II 120K33</li>
+								<li>VGD II 150K33 / VGD II 200K33 / VGD II 250K33 / VGD II 300K33 / VGD II 400K33 /</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product3.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>ONL33-II 10-250KVA</b></p>
+							<br>
+							<p>Трёхфазный онлайн ИБП с изолирующим трансформатором. Увеличенное время работы от батарей, идеальная синусоидальная форма выходного напряжения, нулевое время переключения на инвертор.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>ONL-II-10K33 / ONL-II-15K33 / ONL-II-20K33 / ONL-II-30K33</li>
+								<li>ONL-II-45K33 / ONL-II-60K33 / ONL-II-80K33 / ONL-II-100K33 / ONL-II-120K33</li>
+								<li>ONL-II-160K33 / ONL-II-200K33 / ONL-II-250K33</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product4.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>ONL-M 20-210KVA</b></p>
+							<br>
+							<p>Современные модульные трехфазные ИБП двойного преобразования энергии. Гибкость в построении системы, дальнейшая масштабируемость, надежность и простота в обслуживании – выделяют эту серию из общего ряда ИБП.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>ONL-M 20-210kVA</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div id="two" class="product__wrap tabs__wrap">
+					
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product5.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>KING PRO RM 600-3000 VA</b></p>
+							<p>Линейно-интерактивные источники бесперебойного питания с автоматическим регулированием напряжения AVR. Полный цифровой микропроцессорный контроль и режим энергосбережения, автоматическое определение и выбор частоты 50/60Гц.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>KIN-600AP-RM</li>
+								<li>KIN-1000AP-RM</li>
+								<li>KIN-1200AP-RM</li>
+								<li>KIN-1500AP-RM</li>
+								<li>KIN-2200AP-RM</li>
+								<li>KIN-3000AP-RM</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product6.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>SMART KING PRO+ 1000-3000VA</b></p>
+							<br>
+							<p>Линейно-интерактивные универсальные источники бесперебойного питания с синусоидальной формой выходного сигнала. AVR с функцией повышения и понижения напряжения. Модель SPT выпускается в напольном исполнении, модель SPR универсальна и может быть установлена в 19” стойку или на пол.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>SMART KING PRO+ SPT-500-II/SPT-700-II</li>
+								<li>SMART KING PRO+ SPT-500/SPT-700</li>
+								<li>SMART KING PRO+ SPT-1000/ SPT-1500/ SPT-2000/ SPT-3000</li>
+								<li>SMART KING PRO+ SPR-1000/ SPR-1500/ SPR-2000/ SPR-3000</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product7.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>MACAN 1000 - 3000</b></p>
+							<br>
+							<p>Бюджетная линейка онлайн ИБП с высоким коэффициентом мощности и большим количеством выходных разъемов (от 4 до 8 розеток IEC320 C13). Модели выпускаются только в напольном исполнении.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>MAS-1000 / MAS-2000 / MAS-3000</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product8.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>MACAN COMFORT 1000 - 3000</b></p>
+							<br>
+							<p>Онлайн ИБП с коэффициентом мощности равным единице, компактными размерами, богатым функционалом и неповторимым дизайном.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>MAC-1000/ MAC-2000/ MAC-3000</li>
+								<li>MRT-1000/ MRT-2000/ MRT-3000</li>
+								<li>MRT-1000 SE/ MRT-2000 SE/ MRT-3000 SE</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product9.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>VANGUARD 1000 - 3000VA</b></p>
+							<br>
+							<p>VRT и VGS - новое поколение онлайн ИБП с коэффициентом мощности 0,9; функцией сегментации нагрузок, раздельно управляемыми выходными сегментами и возможностью подключения внешних батарейных блоков. VRT универсален, выполнен в форм-факторе Rack/Tower, в стойке занимает 2U. VGS – напольная модель онлайн ИБП с евророзетками. VGD RM – стоечная модель, высотой всего 1U, имеет коэффициент мощности 0,7 и идеально подходит для питания телекоммуникационной стойки.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>VGS-1000XL / VGS-1500XL / VGS-2000XL / VGS-3000</li>
+								<li>XLVRT-1000XL / VRT-1500XL / VRT-2000XL / VRT-3000XL</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="three" class="product__wrap tabs__wrap">
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product9.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>WOW 300 - 1000VA</b></p>
+							<br>
+							<p>Сверхкомпактный и лёгкий оффлайн ИБП с евророзетками для домашнего использования. Горизонтальное расположение розеток.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>WOW-300 / WOW-500U / WOW-700U / WOW-850U / WOW-1000N</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product10.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>SPD-450N - SPD-1000N</b></p>
+							<br>
+							<p>Трёхфазный онлайн ИБП с изолирующим трансформатором. Увеличенное время работы от батарей, идеальная синусоидальная форма выходного напряжения, нулевое время переключения на инвертор.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>SPD-450N / SPD-650N / SPD-850N / SPD-1000N</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product11.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>SPIDER 650 - 1000VA</b></p>
+							<br>
+							<p>Линейно-интерактивный ИБП с большим количеством выходных евророзеток (8 разъёмов: 4 с батарейной поддержкой + 4 с фильтрацией). Возможность крепления на стену, широкий диапазон автоматической регулировки напряжения.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>SPD-650U / SPD-850U / SPD-1000U</li>
+								<li>SPD-550U LCD / SPD-750U LCD / SPD-900U LCD / SPD-1100U LCD</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product12.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>RAPTOR 600 - 2000VA</b></p>
+							<br>
+							<p>Бюджетный линейно-интерактивный ИБП для защиты компьютеров и рабочих станций. Компактный корпус, 3 компьютерных или евро розетки с резервным питанием в младших моделях, 6 компьютерных розеток - в старших. Модели с индексом АР имеют USB разъем.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>RPT-600A / RPT-800A / RPT-1000A </li>
+								<li>RPT-600AP / RPT-800AP / RPT-1000AP</li>
+								<li>RPT-600AP EURO / RPT-800AP EURO / RPT-1000AP EURO</li>
+								<li>RPT-1025AP/ RPT-1500AP/ RPT-2000AP</li>
+								<li>RPT-1025AP LCD/ RPT-1500AP LCD/ RPT-2000AP LCD/li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product13.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>IMPERIAL 525 - 3000VA</b></p>
+							<br>
+							<p>Линейно-интерактивный ИБП для защиты компьютерной техники с большим количеством выходных разъёмов (5-6 розеток). Широкий диапазон мощностей, горячая замена батареи. Модели IMD имеют ЖК-дисплей.</p>
+							<br>
+							<p><b>Модели:</b></p>
+							<br>
+							<ul>
+								<li>IMP-625AP/ IMP-825AP </li>
+								<li>IMP-1025AP/ IMP-1200AP/ IMP-1500AP/ IMP-2000AP/ IMP-3000AP</li>
+								<li>IMD-525AP/ IMD-625AP/ IMD-825AP</li>
+								<li>IMD-1025AP/ IMD-1200AP/ IMD-1500AP/ IMD-2000AP/ IMD-3000AP</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="four" class="product__wrap tabs__wrap">
+
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product13.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p>Источник бесперебойного питания INF-500/ INF-800/ INF-1100/ INF-1500</p>
+							<br>
+							<p>Модели серии INFINITY относятся к линейно-интерактивным ИБП с чистой синусоидой на выходе. Возможность подключения 12В батарей большой емкости (до 200 Ач) обеспечивает длительное время автономии при малых затратах. Этот факт значительно расширяет сферу применения данных устройств и делает их незаменимыми, например, при обеспечении защиты критически важных приборов частного дома или коттеджа: газового или твердотопливного котла отопления, различных насосов водоснабжения, освещения, а так же сложной электроники.</p>
+						</div>
+					</div>
+					
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product14.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p>Удобный, надежный и экономичный источник бесперебойного питания для промышленных распределительных панелей.</p>
+							<br>
+							<p>ИБП на DIN-рейку DRU-500 / DRU-850 для промышленных распределительных панелей обеспечивает непрерывное управление производственными процессами. Это необходимое решение в области обеспечения защиты производственного оборудования, линий упаковки, сетевых устройств на любом, даже самом небольшом предприятии.</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="five" class="product__wrap tabs__wrap">
+					
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product16.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>Аккумулятор Powercom PM-12-7.0</b></p>
+							<br>
+							<p>Батареи необслуживаемые, герметичные, свинцово-кислотные, устойчивые к коррозии, обладают высокой разрядной ёмкостью, длительным сроком службы, безопасные и надёжные, с очень низким уровнем саморазряда, простые в установке и обслуживании.</p>
+							<p>Сферы применения: <br>ИБП, системы аварийного освещения, измерительное оборудование, системы пожарной и охранной сигнализации, системы телекоммуникации и связи, автоматика, электростанции и подстанции.</p>
+						</div>
+					</div>
+					
+					<div class="product__wrap_item">
+						<div class="product__wrap_img"><img src="img/product15.jpg" alt=""></div>
+						<div class="product__wrap_content">
+							<p><b>Аккумулятор Powercom PM-12-9.0</b></p>
+							<p>Батареи необслуживаемые, герметичные, свинцово-кислотные, устойчивые к коррозии, обладают высокой разрядной ёмкостью, длительным сроком службы, безопасные и надёжные, с очень низким уровнем саморазряда, простые в установке и обслуживании.</p>
+							<p>Сферы применения:</p>
+							<p>ИБП, системы аварийного освещения, измерительное оборудование, системы пожарной и охранной сигнализации, системы телекоммуникации и связи, автоматика, электростанции и подстанции.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="info">
+			<div class="info__container container">
+
+				<div class="info__wrap">
+					<p>
+						<img src="img/info__mail.png" alt="">
+						<a href="mailto:ek1010@mail.ru">ek1010@mail.ru</a>
+					</p>
+					<p>
+						<img src="img/info__tel.png" alt="">
+						<a href="tel:+8901207080">+8901207080</a>
+					</p>
+				</div>
+
+				<div class="info__iframe">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.810622352629!2d39.16720881588305!3d51.681609405771376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413b2ed9db8813bf%3A0x5a580de01557a16d!2z0YPQuy4g0JzQsNGI0LjQvdC-0YHRgtGA0L7QuNGC0LXQu9C10LksIDMsINCS0L7RgNC-0L3QtdC2LCDQktC-0YDQvtC90LXQttGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMzk0MDI2!5e0!3m2!1sru!2sua!4v1581961240277!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<form action="sendmail.php" method="post" class="form contacts__form">
+					<div class="contacts__form_header">
+						<p>Рассчет бесплатно!</p>
+						<h2>Получить <br>предложение <br>по ИПБ</h2>
+					</div>
+					<input type="hidden" name="subject" value="Получить предложение по ИПБ">
+					<div class="contacts__form_line">
+						<input type="text" name="name" required class="contacts__form_line--name" placeholder="Ваше Имя">
+					</div>
+					<div class="contacts__form_line">
+						<input type="email" name="mail" required class="contacts__form_line--mail" placeholder="Ваш email">
+					</div>
+					<div class="contacts__form_line">
+						<input type="tel" name="phone" required class="contacts__form_line--tel" placeholder="Ваш номер телефона">
+					</div>
+					<div class="contacts__form_line">
+						<input type="text" name="comments" required class="contacts__form_line--comments" placeholder="Комментарий">
+					</div>
+					<div class="contacts__form_btn">
+						<button type="submit" class="btn" name="submit">Отправить заявку</button>
+					</div>
+				</form>
+			</div>
+		</section>
 
 	</main>
 
+	<footer class="footer">
+		<div class="footer__container">
+			<p>Лицензированый партнер Powercom</p>
+			<p><a href="img/policy.pdf" target="_blank">Политика конфиденциальности</a></p>
+			<p><a href="http://flex-design.net/">by flexdesign</a></p>
+		</div>
+	</footer>
 
+	<div class="modal" id="order">
 
+		<button class="modal__close order_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
 
-
-
-	<script src="js/scripts.min.js"></script>
-<!-- 
-	<div class="soc">
-		<a href="#" target="_blank">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41"><title>b</title><path d="M20.5,41A20.5,20.5,0,1,1,41,20.5,20.52,20.52,0,0,1,20.5,41Zm0-40A19.5,19.5,0,1,0,40,20.5,19.52,19.52,0,0,0,20.5,1Z"/><path d="M20.66,21.77c-.12-1.31-1.6-1.75-1.6-1.75a2,2,0,0,0,1.23-2c0-1.72-1.8-2.06-2.38-2.06H13.25v8.91h4.24a4,4,0,0,0,1.72-.32A2.36,2.36,0,0,0,20.66,21.77ZM15.21,17.5h2s1.18,0,1.18,1-1.18,1-1.18,1h-2Zm2.13,5.86H15.21V20.92h2.13s1.41,0,1.41,1.22S17.34,23.36,17.34,23.36Z"/><rect x="22.67" y="16.54" width="3.63" height="0.9"/><path d="M27.73,22.09q0-.23,0-.47a3.27,3.27,0,1,0-6.53,0A3.28,3.28,0,0,0,24.49,25a2.94,2.94,0,0,0,3.11-2.17H26.07a1.64,1.64,0,0,1-1.45.87,1.51,1.51,0,0,1-1.56-1.64Zm-3.24-2.53A1.48,1.48,0,0,1,25.93,21H23.06A1.48,1.48,0,0,1,24.49,19.56Z"/></svg>
-		</a>
-		<a href="#" target="_blank">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41"><title>i</title><path d="M20.5,41A20.5,20.5,0,1,1,41,20.5,20.52,20.52,0,0,1,20.5,41Zm0-40A19.5,19.5,0,1,0,40,20.5,19.52,19.52,0,0,0,20.5,1Z"/><circle cx="20.5" cy="20.5" r="1.71"/><path d="M20.5,18.79a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Zm0,0a1.71,1.71,0,1,0,1.71,1.71A1.71,1.71,0,0,0,20.5,18.79Z"/><path d="M23.35,14.75h-5.7a2.9,2.9,0,0,0-2.9,2.9v5.7a2.9,2.9,0,0,0,2.9,2.9h5.7a2.9,2.9,0,0,0,2.9-2.9v-5.7A2.9,2.9,0,0,0,23.35,14.75ZM20.5,23.46a3,3,0,1,1,3-3A3,3,0,0,1,20.5,23.46Zm3.06-5.31a.7.7,0,1,1,.7-.7A.7.7,0,0,1,23.56,18.15Z"/></svg>
-		</a>
-		<a href="#" target="_blank">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41"><title>f</title><path d="M20.5,41A20.5,20.5,0,1,1,41,20.5,20.52,20.52,0,0,1,20.5,41Zm0-40A19.5,19.5,0,1,0,40,20.5,19.52,19.52,0,0,0,20.5,1Z"/><path d="M23.7,21.1l.3-2.5H21.6V16.8a.9.9,0,0,1,.9-.9h1.6V13.6H21.9a2.8,2.8,0,0,0-2.8,2.8v2.1H17V21h2.1v6.2h2.5V21h2.1Z"/></svg>
-		</a>
+		<form action="sendmail.php" method="post" class="modal__from form">
+			<div class="modal__from_header">
+				<p>Рассчет бесплатно!</p>
+				<h3>Заказать дзвонок</h3>
+			</div>
+			<input type="hidden" name="subject" value="Заказать дзвонок">
+			<div class="contacts__form_line">
+				<input type="text" name="name" required class="contacts__form_line--name" placeholder="Ваше Имя">
+			</div>
+			<div class="contacts__form_line">
+				<input type="email" name="mail" required class="contacts__form_line--mail" placeholder="Ваш email">
+			</div>
+			<div class="contacts__form_line">
+				<input type="tel" name="phone" required class="contacts__form_line--tel" placeholder="Ваш номер телефона">
+			</div>
+			<div class="contacts__form_line">
+				<input type="text" name="comments" required class="contacts__form_line--comments" placeholder="Комментарий">
+			</div>
+			<div class="contacts__form_btn">
+				<button type="submit" class="btn" name="submit">Отправить заявку</button>
+			</div>
+		</form>
 	</div>
 
-	<nav class="nav">
-		<div class="nav__lang">
-			<a href="/">ru</a>
-			<a href="#">en</a>
-		</div>
-		<div class="nav__list">
-			<ul class="nav__list_wrap">
-				<li data-menuanchor="firstPage"><a href="#firstPage" class="firstPage">Мы</a></li>
-				<li data-menuanchor="secondPage"><a href="#secondPage" class="secondPage">Портфолио</a></li>
-				<li data-menuanchor="lastPage"><a href="#lastPage" class="lastPage">Контакты</a></li>
-			</ul>
-		</div>
-		<div class="nav__arrow">
-			<a id="moveSectionUp" href="#"><span></span></a>
-			<a id="moveSectionDown" href="#"><span></span></a>
-		</div>
-	</nav> -->
+	<div class="modal" id="calculate">
+
+		<button class="modal__close calculate_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+
+		<form action="sendmail.php" method="post" class="modal__from form">
+			<div class="modal__from_header">
+				<p>Рассчет бесплатно!</p>
+				<h3>Рассчитать необходимый ИБП</h3>
+			</div>
+
+			<input type="hidden" name="subject" value="Рассчитать необходимый ИБП">
+
+			<div class="contacts__form_line">
+				<label for="rated">Номинальное потребление нагрузки в ВА или ВТ <span>*</span></label>
+				<input type="text" name="rated" id="rated" class="contacts__form_line--name" placeholder="Номинальное потребление">
+			</div>
+
+			<div class="contacts__form_line">
+				<label for="number">Количество фаз на входе/выходе ИБП <span>*</span></label>
+				<input type="text" name="number" id="number" class="contacts__form_line--name" placeholder="Количество фаз">
+			</div>
+
+			<div class="contacts__form_line">
+				<label for="time">Необходимое время автономной работы в минутах <span>*</span></label>
+				<input type="text" name="time" id="time" class="contacts__form_line--name" placeholder="Время">
+			</div>
+
+			<div class="contacts__form_line">
+				<label for="reservation">Необходимо ли резервирование N+1 или 2N <span>*</span></label>
+				<input type="text" name="reservation" id="reservation" class="contacts__form_line--name" placeholder="Резервирование">
+			</div>
+
+			<div class="contacts__form_line">
+				<label for="textarea">Дополнительные сведения, которые с Вашей точки зрения помогут наиболее точно представить Вашу задачу</label>
+				<textarea name="textarea" id="textarea" placeholder="Дополнительные сведения"></textarea>
+			</div>
+
+			<div class="contacts__form_line">
+				<input type="text" name="name" required class="contacts__form_line--name" placeholder="ФИО">
+			</div>
+
+			<div class="contacts__form_line">
+				<input type="text" name="position" required class="contacts__form_line--name" placeholder="Должность">
+			</div>
+
+			<div class="contacts__form_line">
+				<input type="text" name="company" required class="contacts__form_line--name" placeholder="Наименование компании">
+			</div>
+
+			<div class="contacts__form_line">
+				<input type="text" name="addres" required class="contacts__form_line--name" placeholder="Адрес">
+			</div>
+
+			<div class="contacts__form_line">
+				<input type="tel" name="phone" required class="contacts__form_line--tel" placeholder="Ваш номер телефона">
+			</div>
+
+			<div class="contacts__form_line">
+				<input type="email" name="mail" required class="contacts__form_line--mail" placeholder="Ваш email">
+			</div>
+
+			<div class="contacts__form_btn">
+				<button type="submit" class="btn" name="submit">Отправить анкету</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal modal__thanks" id="thanks">
+		<button class="modal__close thanks_close" type="button">
+			<span></span>
+			<span></span>
+		</button>
+		<h3>Спасибо за доверие!</h3>
+		<p>Мы обязательно с вами свяжемся!</p>
+	</div>
+
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(57586237, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/57586237" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158766152-1"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-158766152-1');
+	</script>
+
+	<script src="js/scripts.min.js"></script>
+
+
 </body>
 </html>

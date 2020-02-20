@@ -7,7 +7,33 @@
   width: 100%
   margin: 0 auto
   padding: 0 15px
-  
+ 
+
+.link
+	display: block
+	position: relative
+	z-index: 1
+
+	&::before
+		content: ''
+		width: 0
+		transform: scale(0)
+		transition: all .3s
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 1px
+		background-color: #fff
+		z-index: -1
+
+	&:hover,
+	&:focus
+		color: #fff
+		text-decoration: none
+
+		&::before
+			transform: scale(1)
+
 
 .header
 	background-color: #0288d1
@@ -17,12 +43,11 @@
 	right: 0
 	left: 0
 	z-index: 1001
-	font-size: 18px
 
 	&--menu,
 	&--active
 		box-shadow: 0 0 5px 0 rgba($accent, .4)
-	
+
 	&__container
 		display: flex
 		align-items: center
@@ -33,6 +58,8 @@
 	&__logo
 		display: flex
 		align-items: center
+		line-height: 2
+		white-space: nowrap
 
 		p
 			margin-left: 15px	
@@ -46,77 +73,523 @@
 
 			&:last-child
 				margin-right: 0
+		a
+			@extend .link
 
 	&__info
 		a
+			@extend .link
 			margin-right: 20px
+			display: inline-block
 
 	&__call
 		text-transform: uppercase
 		text-decoration: underline
 		font-weight: 700
 
+
+.main
+	overflow: hidden
+
+
 .hero
+	position: relative
 	background: url("../img/hero-bg.jpg")
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center
 	padding-top: 220px	
 	padding-bottom: 320px
+	color: #fff
 
 	p
-		font-size: 18px	
 		width: 60%
 		margin-bottom: 55px
-	
+
+	&__down
+		position: absolute
+		left: 50%
+		bottom: 30px
+		transform: translate(-50%, 0)
+		display: block
+		transition: all .6s
+
+		&:hover,
+		&:focus
+			transform: translate(-50%, 20%)
+
+
 .about
 	padding-top: 135px
-	padding-bottom: 50px
-	color: #000	
+	padding-bottom: 80px
+
 	&__container
 		display: flex
 		justify-content: space-between
-		.title
-			margin-bottom: 75px
-			display: inline-block
-	.list
+		flex-wrap: wrap
+
+	&__sub-title
+		margin-bottom: 100px
+		display: inline-block
+		color: #757575
+
+	&__list
 		width: 29%
-		&__wrap
-			display: -webkit-flex
-			display: -moz-flex
-			display: -ms-flex
-			display: -o-flex
+
+		&_item
 			display: flex
-				align-items: center
-			margin-bottom: 55px
+			align-items: center
+			margin-bottom: 80px
+			line-height: 1.8
+
+			&:last-child
+				margin-bottom: 0
 
 			p
 				margin-left: 55px
-				font-size: 18px
-				line-height: 1.4
-				font-weight: 500
+				font-weight: 600
 
-.statistic
-	display: flex
-	flex-direction: column
-	justify-content: space-between
-	width: 60%
-	&__wrap
-		background-color: #f7f8f8
-		padding: 50px	0
-		display: flex	
-		justify-content: center	
-	.list
-		width: 20%
-		span
-			font-size: 36px
-			font-weight: 700
+	&__statistic
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 60%
+
+		&_wrap
+			background-color: #f7f8f8
+			padding: 50px 35px
+			display: flex
+			justify-content: space-between
+			margin-bottom: 50px
+
+		&_list
+			width: 20%
+			margin-right: 2%
+
+			b
+				font-size: 36px
+
+			p
+				line-height: 1.8
+
+		&_content
+			margin-bottom: 100px
+			line-height: 1.8
+
+	&__order
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		h2
+			margin-bottom: 45px
+			line-height: 1.6
+
+		&_wrap
+			margin-right: 75px
+
 		p
-			line-height: 1.7	
-			font-size: 18px	
+			display: inline-block
+			color: #757575
+			line-height: 1.8
 
+
+.certificate
+	padding-bottom: 95px
+
+	&__container
+		position: relative
+		padding-bottom: 140px
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			bottom: 40px
+			left: 0
+			right: 0
+			height: 50%
+			width: 100%
+			background-color: #f7f8f8
+
+	&__header
+		display: flex
+		align-items: center
+		margin-bottom: 80px
 		
+		p
+			font-weight: 600
+			margin-right: 40px
+
+		div
+			display: flex
+
+	&__prev,
+	&__next
+		position: relative
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		border: 1px solid $text
+		transition: all .6s
+		margin: 0 5px
+		cursor: pointer
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 10px
+			height: 10px
+			border-top: 1px solid $text
+			border-left: 1px solid $text
+
+	&__prev
+		&::before
+			transform: translate(-30%, -50%) rotate(-45deg)
+
+	&__next
+		&::before
+			transform: translate(-70%, -50%) rotate(135deg)
+
+	.swiper-button-disabled
+		opacity: .4
+
+	&__pagination
+		display: flex
+		justify-content: center
+		width: 90%
+		margin: 0 auto
+		bottom: 10px !important
+		height: 16px
+
+		span
+			position: relative
+			margin: 0 10px
+			width: 16px
+			height: 16px
+			border-radius: 50%
+			border: 1px solid transparent !important
+			background-color: transparent
+			outline: none
+			transition: all .6s
+			opacity: 1 !important
+			border-color: transparent
+
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 8px
+				height: 8px
+				border-radius: 50%
+				background-color: #757575
+				opacity: 1
+				transition: all .6s
+
+		.swiper-pagination-bullet-active
+			border: 1px solid #757575 !important
+
+			&::before
+				opacity: 0
+
+	&__slider
+
+		img
+			max-width: 340px
+			transition: all .6s
+
+		a
+			position: relative
+			display: block
+			margin: 0 auto
+			text-align: center
+			padding-bottom: 20px
+			transition: all .6s
+
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 35px
+				height: 35px
+				background-color: #fff
+				z-index: 1
+
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 35px
+				height: 35px
+				background-image: url(../img/loop.png)
+				background-repeat: no-repeat
+				background-position: center
+				transition: all .6s
+				z-index: 2
+
+			&:hover,
+			&:focus
+				img
+					box-shadow: 10px 10px 15px 0 rgba(#000, .2)
+
+				&::before,
+				&::after
+					transform: translate(-50%, -50%) scale(.8)
+
+
+.work
+	padding-bottom: 190px
+
+	&__header
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		flex-wrap: wrap
+		max-width: 50%
+		width: 100%
+		margin-bottom: 55px
+
+		p
+			color: #757575
 		
+	&__step
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		&_item
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 24%
+			line-height: 1.8
+
+		img
+			width: 100%
+			margin-bottom: 30px
+
+		a
+			color: #ff5722
+			text-decoration: underline
+
+			&:hover,
+			&:focus
+				color: #ff5722
+
+		p
+			margin-bottom: 50px
+
+		&_number
+			font-size: 24px
+			color: #757575
+
+
+.product
+	padding-bottom: 80px
+
+	&__header
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: flex-end
+		width: 50%
+		margin-bottom: 95px
+
+	&__tabs
+		display: flex
+		justify-content: space-between
+		margin-bottom: 65px
+
+		li
+			width: 19%
+
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 100%
+			text-align: center
+			font-size: 16px
+			text-transform: uppercase
+			color: #757575
+			border-radius: 4px
+			padding: 8px
+			transition: all .6s
+			background-color: #f7f8f8
+			border: 1px solid transparent
+
+		.active
+			background-color: #ff5722
+			color: #fff
+			border:
+				bottom: 1px solid #c4431a
+				right: 1px solid #c4431a
+
+	&__wrap
+
+		&_item
+			padding: 60px 30px
+			background-color: #f7f8f8
+			display: flex
+			justify-content: space-between
+			margin-bottom: 5px
+
+			&:last-child
+				margin-bottom: 0
+
+		&_img
+			position: relative
+			width: 350px
+			height: 270px
+			margin-right: 30px
+			border-radius: 5px
+			background-color: #fff
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				max-width: 90%
+				max-height: 90%
+
+		&_content
+			width: 70%
+
+		ul
+
+		li
+			padding: 3px 15px
+
+			&:nth-child(odd)
+				background-color: #e1e2e3
+
+
+.info
+
+	&__container
+		position: relative
+		background-color: #f7f8f8
+
+	&__wrap
+		width: 50%
+		padding: 50px 90px 50px 50px
+
+		a
+			font-size: 36px
+			color: #757575
+			@extend .link
+
+			&::before
+				background-color: #757575
+
+			&:hover,
+			&:focus
+				color: #757575
+
+		p
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 45px
+
+			&:last-child
+				margin-bottom: 0
+
+		img
+			margin-right: 10px
+
+	&__iframe
+		position: absolute
+		top: 0
+		right: 15px
+		width: 48%
+
+		iframe
+			width: 100%
+			height: 880px
+
+
+.contacts
+	background-color: $accent
+	color: #fff
+	padding: 
+		top: 65px
+		bottom: 135px
+
+	&__form
+		max-width: 44%
+
+		&_header
+			display: flex
+			justify-content: space-between
+			margin-bottom: 20px
+
+		&_line
+			margin-bottom: 20px
+
+			input
+				background-repeat: no-repeat
+				background-position: 98% center
+
+			&--name
+				background-image: url(../img/contacts__name.png)
+
+			&--mail
+				background-image: url(../img/contacts__mail.png)
+
+			&--tel
+				background-image: url(../img/contacts__tel.png)
+
+			&--comments
+				background-image: url(../img/contacts__comments.png)
+
+
+		&_btn
+			display: flex
+			justify-content: flex-end
+			margin-top: 80px
+
+			.btn
+				max-width: 380px
+				width: 100%
+		
+
+.footer
+	background-color: $accent
+	padding: 0 40px
+	color: #fff
+
+	&__container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 40px 15px
+		border-top: 1px solid #fff
+
+	h2
+		font-weight: 600
+
+	a
+		@extend .link
+
+	p
+		max-width: 33%
+
 
 
 @import "media" // Always at the end
